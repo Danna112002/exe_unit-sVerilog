@@ -1,4 +1,4 @@
-//testbench dla modulu dodawania
+//testbench dla modulu porownywania
 
 module Porownywanie_tb;
 parameter BITS=32;

@@ -1,4 +1,4 @@
-module Dodawanie (i_argA, o_result, o_error);
+module konwersja (i_argA, o_result, o_error);
 parameter WIDTH=32;
 input  logic [WIDTH-1:0]  i_argA;
 output logic [WIDTH-1:0] o_result;
