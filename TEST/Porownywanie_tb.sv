@@ -20,7 +20,7 @@ Porownywanie_rtl (.i_argA(s_i_argA), .i_argB(s_i_argB), .o_result(s_o_synthesis)
 initial begin
     s_i_argA=0;
     s_i_argB=0;
-    $dumpfile("signals.vcd"); //w tym pliku zostaną zapisane zapisane sygnały zarejestrowane w symulacji 
+    $dumpfile("signals.vcd");       //w tym pliku zostaną zapisane zapisane sygnały zarejestrowane w symulacji 
     $dumpvars(0,Porownywanie_tb);   //Wskazania ze wszystkie sygnaly z testbench i nizej maja byc rejestrowane podczas symulacji
     
 // Pętla for przypisująca losowe wartości argumentom wejścia dla pięciu iteracji, rozpoczęcie symulacji
@@ -31,6 +31,5 @@ begin
 
 
 end
-
 end
 endmodule
