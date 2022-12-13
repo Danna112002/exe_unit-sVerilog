@@ -7,7 +7,7 @@ module exe_unit_w48 (i_argA, i_argB, i_oper, o_result, o_error, o_status, o_carr
     input logic  [WIDTH-1:0]    i_argB;
     input logic  [WIDTH-1:0]    i_argA;
     output logic [WIDTH-1:0]    o_result;
-  //output logic                o_error;
+    output logic                o_error;
     output logic [3:0]          o_status;
     output logic                o_error_konw;
     output logic                o_error_ust;
