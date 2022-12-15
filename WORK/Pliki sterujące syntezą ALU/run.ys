@@ -1,0 +1,23 @@
+# Wczytywanie pliku modelu
+    read_verilog -sv exe_unit_w48.sv
+
+# Utworzenie kopii modelu z inną nazwą
+    copy exe_unit_w48 exe_unit_w48_rtl
+
+# Ustawienie hierarchii projektu na nowy moduł
+    hierarchy -top exe_unit_w48_rtl
+
+# synteza logiczna 
+    synth
+     
+# Mapowaie na bramki
+    abc -g AND,OR,XOR
+
+# Optymalizacja po mapowaniu
+    opt_clean
+
+#zapis wyniku symulacji 
+    write_verilog -noattr exe_unit_w48_rtl.sv
+
+# Wypisywanie statystyki użytych bramek
+    stat -tech cmos
